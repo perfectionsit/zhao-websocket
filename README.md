@@ -3,6 +3,9 @@
 ## 简介
 本项目提供了一组用于构建 WebSocket 通讯应用的 API和SDK，它们简单易用、轻量快速。通过使用本工具包，开发人员可以方便地构建具有 WebSocket 功能的应用程序。
 
+使用本工具开发的实时聊天小网站：https://zhao.zhaowenhao.cn
+
+测试账户：demo1、demo2。密码：123456
 ## 要求
 
 - springboot版本3.0及以上，jdk版本17及以上（自动装配文件与springboot2.0不同，如有需要可以自行修改）
@@ -55,7 +58,7 @@ Browser端：
 - setWebsocketPath设置连接路径
 - getCloseType获取连接断开类型，客户端登出或服务端踢出
 
-##开发者信息
+## 开发者信息
 - 作者：瞾彧滉
 - 邮箱：zwh1350253335@gmail.com
 - git小白一个，希望自己做的工具能帮助到更多的人，欢迎大家修改与指正
