@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b860483e-cf5a-4b78-9d11-1a8391bbbabd" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/WebsocketServer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/WebsocketServer1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/browser/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/browser/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/browser/src/websocketBrowser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/server/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/server/lib/WebsocketServer.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/server/src/main/java/com/example/serverdemo/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/server/src/main/java/com/example/serverdemo/DemoPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/server/src/main/java/com/example/serverdemo/DemoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/server/src/main/java/com/example/serverdemo/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/server/src/main/java/com/example/serverdemo/Listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/server/src/main/java/com/example/serverdemo/ServerDemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/server/src/main/java/com/example/serverdemo/TokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Browser/websocketBrowser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WebStarterIncluded/WebsocketServer.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WithoutWebStarter/WebsocketServer.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/annotation/WsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/annotation/WsMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/pojo/MethodBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/pojo/WsRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/pojo/WsToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/websocket-Server/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhao-Websocket.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2O6MNxSqjINJm5WZBXDIlEIa1Jd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/IdeaProjects/zhao-Websocket",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "d41d8cd98f00b204e9800998ecf8427e",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\zhao-Websocket" />
+      <recent name="E:\IdeaProjects\zhao-Websocket\demo\server" />
+      <recent name="E:\IdeaProjects\zhao-Websocket\demo\browser" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="b860483e-cf5a-4b78-9d11-1a8391bbbabd" name="变更" comment="" />
+      <created>1680876541738</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680876541738</updated>
+      <workItem from="1680876542880" duration="2191000" />
+      <workItem from="1680916882311" duration="1896000" />
+      <workItem from="1680923823948" duration="1321000" />
+      <workItem from="1680925432498" duration="3580000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
