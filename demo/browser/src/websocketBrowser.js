@@ -88,8 +88,7 @@ function watch(obj, propName, callback) {
 export function socket(url, data = undefined, file = undefined) {
     return new Promise(async (resolve,reject) => {
         if(isClient){
-            const count = requestCount++
-            if(requestCount === 1023)requestCount=0
+            const count = (requestCount++&1073741823)+1
             const res = await requestEncode(url, count, data, file)
             for (let i = 0; i < res.length; i++) {
                 startTimer()
@@ -269,7 +268,7 @@ function responseDecode(data) {
  * @param file : null|Array 比特数组文件
  * @returns {Promise<Array>}
  */
-function requestEncode(method, count, data, file) {
+function requestEncode(method, count, data = undefined, file = undefined) {
     return new Promise(async resolve => {
         let request = []
         request.push(...token)
@@ -281,11 +280,6 @@ function requestEncode(method, count, data, file) {
         }
         for (let i = 0; i < methodNameBytes.length; i++) {
             request.push(methodNameBytes[i])
-        }
-        let _count = count
-        for (let i = 0; i < 4; i++) {
-            request.push(_count & 0xff)
-            _count >>= 8
         }
         if (typeof file === 'undefined') {
             request.push(0)
@@ -314,21 +308,27 @@ function requestEncode(method, count, data, file) {
                 request.push(res[i])
             }
         }
-        resolve(await splitPage(request))
+        resolve(await splitPage(request,count))
     })
 }
 
 /**
  * 请求数据分页
  * @param data 请求数据
+ * @param count 请求标记
  * @returns {Promise<Array>}
  */
-function splitPage(data) {
+function splitPage(data,count) {
     return new Promise(resolve => {
         const page = Math.ceil(data.length / 7168)
         let result = [[]]
         for (let i = 0; i < page; i++) {
             result[i] = [((i === page - 1) ? 1 : 0)]
+            let _count = count
+            for (let j = 0; j < 4; j++) {
+                result[i].push(_count & 0xff)
+                _count >>= 8
+            }
             result[i].push(...data.slice(i * 7168, (i + 1) * 7168))
         }
         resolve(result)
@@ -360,7 +360,7 @@ function connect() {
             ws.onclose = onClose
             startPing()
             resolve()
-            ws.send((new Uint8Array((await requestEncode("", -1))[0])))
+            ws.send((new Uint8Array((await requestEncode("", requestCount))[0])))
             window.onbeforeunload = () => {
                 closeSocket()
             }

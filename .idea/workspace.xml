@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b860483e-cf5a-4b78-9d11-1a8391bbbabd" name="变更" comment="0.1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/browser/src/websocketBrowser.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo/browser/src/websocketBrowser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/server/lib/WebsocketServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo/server/lib/WebsocketServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket-Browser/websocketBrowser.js" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Browser/websocketBrowser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WebStarterIncluded/WebsocketServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WebStarterIncluded/WebsocketServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WithoutWebStarter/WebsocketServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WithoutWebStarter/WebsocketServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +26,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/IdeaProjects/zhao-Websocket",
+    "last_opened_file_path": "E:/IdeaProjects/zhao-Websocket/demo/server/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,9 +61,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\zhao-Websocket\demo\server\lib" />
+      <recent name="E:\IdeaProjects\zhao-Websocket\websocket-Server\jar\WebsocketServer-WebStarterIncluded" />
+      <recent name="E:\IdeaProjects\zhao-Websocket\websocket-Server\jar\WebsocketServer-WithoutWebStarter" />
+      <recent name="E:\IdeaProjects\zhao-Websocket\websocket-Server\src\main" />
       <recent name="E:\IdeaProjects\zhao-Websocket" />
-      <recent name="E:\IdeaProjects\zhao-Websocket\demo\server" />
-      <recent name="E:\IdeaProjects\zhao-Websocket\demo\browser" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
@@ -66,7 +79,13 @@
       <workItem from="1680876542880" duration="2191000" />
       <workItem from="1680916882311" duration="1896000" />
       <workItem from="1680923823948" duration="1321000" />
-      <workItem from="1680925432498" duration="4376000" />
+      <workItem from="1680925432498" duration="4595000" />
+      <workItem from="1680941766630" duration="719000" />
+      <workItem from="1681224463086" duration="132000" />
+      <workItem from="1681268448400" duration="14000" />
+      <workItem from="1681300711834" duration="3000" />
+      <workItem from="1681742632578" duration="587000" />
+      <workItem from="1681786111161" duration="7520000" />
     </task>
     <task id="LOCAL-00001" summary="0.1.0">
       <created>1680940684634</created>
@@ -75,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680940684634</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="0.1.0">
+      <created>1680941377215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680941377215</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -125,8 +125,6 @@ public class WsUtil {
         byte[] _methodName = new byte[getLength(in)];
         lastLength -= (in.read(_methodName) + 4);
         wsRequestBody.setMethod(new String(_methodName, StandardCharsets.UTF_8));
-        wsRequestBody.setCount(getLength(in));
-        lastLength -= 4;
         boolean hasFile = false;
         byte[] _hasFile = new byte[1];
         lastLength -= in.read(_hasFile);

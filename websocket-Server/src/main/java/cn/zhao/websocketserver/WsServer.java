@@ -13,17 +13,19 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Websocket信息处理端口
- * 注意，在spring中Bean的管理方式为单例，可websocket服务是多对象，
+ * ，注意，在spring中Bean的管理方式为单例，可websocket服务是多对象，
  * 每个会话会创建一个websocket对象。导致除了第一个websocket，其他的都不能注入实例，
  * 所以不要用@Resource或者@Autowired注入该类,否则将注入失败获取NULL
  */
 @Component
 @ServerEndpoint("/zhao")
 public class WsServer {
-    private final ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+    private final Map<Integer,ByteArrayOutputStream> buffer = new ConcurrentHashMap<>();
 
     /**
      * 事件，处理新连接
@@ -70,13 +72,30 @@ public class WsServer {
     public void onMessage(byte[] message, Session session) throws IOException, InvocationTargetException, IllegalAccessException {
         switch (message[0]) {
             //处理分片数据
-            case 0 -> buffer.write(message, 1, message.length - 1);
+            case 0 -> {
+                int count = message[1]+(message[2]<<8)+(message[3]<<16)+(message[4]<<24);
+                if(buffer.containsKey(count)){
+                    buffer.get(count).write(message, 5, message.length - 5);
+                }else{
+                    ByteArrayOutputStream buffers = new ByteArrayOutputStream();
+                    buffers.write(message, 5, message.length - 5);
+                    buffer.put(count,buffers);
+                }
+            }
             //处理完整数据
             case 1 -> {
-                buffer.write(message, 1, message.length - 1);
-                WsRequestBody wsRequestBody = WsUtil.requestDecode(buffer.toByteArray());
+                int count = message[1]+(message[2]<<8)+(message[3]<<16)+(message[4]<<24);
+                ByteArrayOutputStream buffers;
+                if(buffer.containsKey(count)){
+                    buffers = buffer.get(count);
+                    buffer.remove(count);
+                }else{
+                    buffers = new ByteArrayOutputStream();
+                }
+                buffers.write(message, 5, message.length - 5);
+                WsRequestBody wsRequestBody = WsUtil.requestDecode(buffers.toByteArray());
                 assert wsRequestBody != null;
-                buffer.reset();
+                wsRequestBody.setCount(count);
                 boolean authentication = true;
                 //拦截器
                 if (!WsConfiguration.authentication.isEmpty()) {
@@ -84,7 +103,7 @@ public class WsServer {
                             .authentication.getMethod().invoke(WsConfiguration.authentication.getBean(), session, wsRequestBody);
                 }
                 try {
-                    if (authentication && wsRequestBody.getCount() != -1) {
+                    if (authentication && wsRequestBody.getCount() != 0) {
                         MethodBean methodBean;
                         if ((methodBean = WsConfiguration.methodMap.get(wsRequestBody.getMethod())) != null) {
                             //根据映射方法入参类型与键名注入方法
@@ -92,7 +111,7 @@ public class WsServer {
                             JSONObject jsonObject = null;
                             try {
                                 jsonObject = JSONObject.parseObject(wsRequestBody.getRequestData());
-                            } catch (Exception e) {
+                            } catch (Exception ignored) {
                             }
                             JSONObject finalJsonObject = jsonObject;
                             Arrays.stream(methodBean.getParameters()).forEach(pram -> {
@@ -111,7 +130,7 @@ public class WsServer {
                                 }
                             });
                             if (session.isOpen())
-                                WsUtil.sendResponse(session, wsRequestBody.getCount(), methodBean.getMethod().invoke(methodBean.getBean(), prams.toArray()));
+                                WsUtil.sendResponse(session, count, methodBean.getMethod().invoke(methodBean.getBean(), prams.toArray()));
                         } else {
                             throw new RuntimeException("请求没有找到对应映射方法路径");
                         }
