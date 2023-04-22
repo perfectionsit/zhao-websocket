@@ -94,6 +94,7 @@ export function socket(url, data = undefined, file = undefined) {
                 startTimer()
                 ws.send(new Uint8Array(res[i]));
             }
+            dataBox[count] = ''
             watch(dataBox, count,() => {
                 resolve(dataBox[count])
                 delete dataBox[count]
@@ -163,7 +164,9 @@ async function onMessage(res) {
                     event.data = JSON.parse(event.data)
                 }catch (e){}
             }
-            dataBox[event.count] = event
+            if(dataBox[event.count]!==undefined){
+                dataBox[event.count] = event
+            }
         } else if (event.responseType === 'notice') {
             //后端通知响应时调用前端映射方法
             closeType = ''

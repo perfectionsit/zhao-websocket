@@ -84,7 +84,7 @@ public class WsServer {
             }
             //处理完整数据
             case 1 -> {
-                int count = message[1]+(message[2]<<8)+(message[3]<<16)+(message[4]<<24);
+                int count = (message[1]&255)+((message[2]&255)<<8)+((message[3]&255)<<16)+((message[4]&255)<<24);
                 ByteArrayOutputStream buffers;
                 if(buffer.containsKey(count)){
                     buffers = buffer.get(count);

@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b860483e-cf5a-4b78-9d11-1a8391bbbabd" name="变更" comment="0.1.0">
+    <list default="true" id="b860483e-cf5a-4b78-9d11-1a8391bbbabd" name="变更" comment="0.1.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/browser/src/websocketBrowser.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo/browser/src/websocketBrowser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/server/lib/WebsocketServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo/server/lib/WebsocketServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocket-Browser/websocketBrowser.js" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Browser/websocketBrowser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WebStarterIncluded/WebsocketServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WebStarterIncluded/WebsocketServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WithoutWebStarter/WebsocketServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Server/jar/WebsocketServer-WithoutWebStarter/WebsocketServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-Server/src/main/java/cn/zhao/websocketserver/WsUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,29 +39,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/IdeaProjects/zhao-Websocket/demo/server/lib",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "d41d8cd98f00b204e9800998ecf8427e",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/zhao-Websocket/demo/server/lib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\zhao-Websocket\demo\server\lib" />
-      <recent name="E:\IdeaProjects\zhao-Websocket\websocket-Server\jar\WebsocketServer-WebStarterIncluded" />
       <recent name="E:\IdeaProjects\zhao-Websocket\websocket-Server\jar\WebsocketServer-WithoutWebStarter" />
+      <recent name="E:\IdeaProjects\zhao-Websocket\websocket-Server\jar\WebsocketServer-WebStarterIncluded" />
       <recent name="E:\IdeaProjects\zhao-Websocket\websocket-Server\src\main" />
       <recent name="E:\IdeaProjects\zhao-Websocket" />
     </key>
@@ -85,7 +83,13 @@
       <workItem from="1681268448400" duration="14000" />
       <workItem from="1681300711834" duration="3000" />
       <workItem from="1681742632578" duration="587000" />
-      <workItem from="1681786111161" duration="7520000" />
+      <workItem from="1681786111161" duration="8166000" />
+      <workItem from="1681822630458" duration="3168000" />
+      <workItem from="1681873090260" duration="1164000" />
+      <workItem from="1682087316953" duration="149000" />
+      <workItem from="1682089487564" duration="305000" />
+      <workItem from="1682122840321" duration="37000" />
+      <workItem from="1682132992965" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="0.1.0">
       <created>1680940684634</created>
@@ -101,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680941377215</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="0.1.1">
+      <created>1681819876025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681819876025</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="0.1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.1.0" />
+    <MESSAGE value="0.1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.1.1" />
   </component>
 </project>
